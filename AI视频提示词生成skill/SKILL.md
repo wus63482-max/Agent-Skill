@@ -62,23 +62,23 @@ description: 将 TikTok 爆款脚本的分镜画面描述，逐镜头转化为 A
 
 ## TikTok 美区 UGC 原生感视觉风格约束 (全局)
 
-要在 Seedance 2.0 中完美复刻**美区原生感（Authenticity）**，核心在于通过提示词去“对抗”过度的 AI 精致感，模拟出美国用户最信任的“真人、手机、生活化”特质。在每个 Prompt 中必须隐式或显式贯穿以下风格关键词，**在提示词中反复强调 Imperfect, Authentic, Handheld 这三个词**：
+要在 Seedance 2.0 中完美复刻**美区原生感（Authenticity）**，核心在于通过提示词去“对抗”过度的 AI 精致感，模拟出美国用户最信任的“真人、手机、生活化”特质。在每个 Prompt 中必须隐式或显式贯穿以下三种特质（注：针对 Seedance 2.0，所有提示词必须使用中文生成）：
 
 ### 1. 视觉上的“去 AI 化” (De-AI Visuals)
 美区用户对滤镜感重、磨皮过度、光影过于完美的视频非常警惕。
-- **手机拍摄质感**：不要用 "Cinematic" 或 "4K"。使用 `Shot on iPhone 15 Pro`, `Phone camera quality`, `Handheld shakiness`, `Vertically filmed (9:16)`。
-- **真实不完美的皮肤**：`Natural skin texture`, `Visible pores`, `Non-filtered look`, `Real skin imperfections`。
-- **生活化光影**：避免影棚光，追求生活光。使用 `Natural window light`, `Overhead room lighting`, `Direct sunlight with shadows`。
+- **手机拍摄质感**：不要用“电影级” (Cinematic) 或“4K”。使用 `iPhone 15 Pro 竖屏拍摄`, `手机原生画质`, `手持拍摄的轻微晃动感` (Sora/Veo引擎对应使用 `Shot on iPhone 15 Pro`, `Handheld shakiness` 等)。
+- **真实不完美的皮肤**：`真实的皮肤纹理`, `可见的毛孔`, `真实的皮肤瑕疵` (Sora/Veo对应使用 `Natural skin texture`, `Visible pores` 等)。
+- **生活化光影**：避免影棚光，追求生活光。使用 `自然窗户光`, `房间顶灯光`, `带有阴影的直射阳光`。
 
 ### 2. 场景的“美区本土化” (Domestic Setting)
 让背景一眼看上去就像在美国的普通社区或家庭。
-- **室内**：`American suburban kitchen with wooden cabinets`, `Messy bedroom background`, `In front of a bathroom mirror`。
-- **室外**：`Driveway of a suburban house`, `American supermarket aisle`, `Public park bench`。
+- **室内**：`带有木质橱柜的美式郊区厨房`, `具有真实生活气息的卧室背景`, `在浴室镜子前`。
+- **室外**：`典型的美国郊区房屋车道`, `美国超市货架过道`, `社区公园长椅`。
 
 ### 3. 角色形象的“邻家感” (Relatability)
 美区 UGC 成功的关键在于“像我认识的一个朋友”，避免模特般的僵硬，追求基础款与丰富表情。
-- **美区基础穿搭**：`Wearing a simple oversized hoodie`, `Messy bun hairstyle`, `Casual workout clothes`。
-- **丰富生活化表情**：`High energy`, `Exaggerated facial expressions`, `Talking to the camera as a friend`。
+- **美区基础穿搭**：`穿着简单的宽松连帽衫`, `随意的丸子头`, `日常居家休闲服`。
+- **丰富生活化表情**：`充满精力`, `生动的面部表情`, `像朋友一样对着镜头说话`。
 
 > **关键原则**：“糙”一点往往比“美”一点转化率更高。提示词必须让生成画面看起来像**真人用手机拍的真实可信的 UGC 内容**，而不是专业广告片。绝对避免任何"影棚感"、"广告感"的抽象词汇。
 
@@ -108,32 +108,37 @@ description: 将 TikTok 爆款脚本的分镜画面描述，逐镜头转化为 A
 - **多模态参考（References）的极简准则**：
   - **不该参考的（通用元素）**：切忌给模型喂食太多参考！比如“森林”、“树影”、“满地垃圾的营地”、“番茄”、“白纸”、“普通的咖啡杯”——一旦传入这些普通图片/视频，模型会不可避免地提取材质/色调/构图等无关特征，从而破坏整体的统一 UGC 手机实拍质感。这些通用对象完全依靠 Prompt 文字自身即可完美处理（去 AI 化泛化）。
   - **唯一必须参考的（强视觉控制）**：
-    - ① **核心产品特写/特定材质**：例如 `181N` 这类有特定全龙骨钻样纹理和真皮皮鞘的产品，必须给图片，否则 AI 会画错。(`@Image`)
-    - ② **难以形容的关键交互动态**：比如第一人称非常用力的剁砍动作、“刀锋切不进哪怕一寸”这种特殊物理交互过程或特定的 CTA 手指引导，这些口述很难传达力量感时，必须给视频参考。(`@Video`)
-  - 🚫 **严禁参考的（情绪与神态）**：**绝对不要使用 `@Video` 来参考角色的表情/情绪（如沮丧、兴奋）**。多模态参考视频中的演员长相会干扰文本生成的角色脸部特征，进而导致严重的“脸崩”与一致性破坏。角色的微表情、神态和情绪，**必须完全由 Prompt 文本详细描述**（例如 `expressing intense frustration`, `a confident expression`, `looking extremely annoyed`）。
-  - **角色锚定（Character Anchoring）**：Seedance 2.0 因风控不支持上传真人照片。最佳策略是利用构建好的 **“真人出镜超级文本锁 (Global Text Lock Prompt)”**（如一个设定好长相、年龄、服装和打光的详细英文人物小传），将其无缝拼接在每一次 `Prompt` 指令的最开头。
-  - **音频处理**：完全舍弃 `@Audio` 标签参考！只需在段末使用 `Audio:` 文字去详细描述带有环境白噪音的原声环境以及配合何种情绪的美区男/女声音效即可。
+    - ① **核心产品特写/特定材质**：例如 `181N` 这类有特定全龙骨钻样纹理和真皮皮鞘的产品，必须给图片，否则 AI 会画错。(`@图片`)
+    - ② **难以形容的关键交互动态**：比如第一人称非常用力的剁砍动作、“刀锋切不进哪怕一寸”这种特殊物理交互过程或特定的 CTA 手指引导，这些口述很难传达力量感时，必须给视频参考。(`@视频`)
+  - 🚫 **严禁参考的（情绪与神态）**：**绝对不要使用 `@视频` 来参考角色的表情/情绪（如沮丧、兴奋）**。多模态参考视频中的演员长相会干扰文本生成的角色脸部特征，进而导致严重的“脸崩”与一致性破坏。角色的微表情、神态和情绪，**必须完全由 Prompt 文本详细描述**（例如 `表达出极度沮丧`, `自信的表情`, `看起来非常烦躁`）。
+  - **角色锚定（Character Anchoring）**：Seedance 2.0 因风控不支持上传真人照片。最佳策略是利用构建好的 **“真人出镜超级文本锁 (Global Text Lock Prompt)”**（如一个设定好长相、年龄、服装和打光的详细中文人物小传），将其无缝拼接在每一次 `Prompt` 指令的最开头。
+  - **音频处理**：完全舍弃 `@Audio` 标签参考！只需在段末使用 `Audio:` 文字去全英文详细描述带有环境白噪音的原声环境以及配合何种情绪的美区男/女声音效，同时必须在其下方附上该旁白的中文翻译。
 - **完美指代语法 (Referential Prompting)**：
-  - 务必将分配好的 `@ImageN` 或 `@VideoN` 标签，像呼吸一样融合并穿插进你的自然流 Prompt 文本中（例如：`tracking the person like @Video1, as they rub a dull hunting knife (@Image1) against a ceramic mug`）。
+  - 务必将分配好的 `@图片N` 或 `@视频N` 标签，像呼吸一样融合并穿插进你的自然流中文 Prompt 文本中（例如：`像 @视频1 那样运镜，角色拿着一把变钝的猎刀 (@图片1) 在陶瓷杯上摩擦`）。
 
 **输出格式**：
 ```text
 ### Segment [N]: [覆盖的阶段名] ([合并后的时间段])
 
 **Prompt (Seedance 2.0)**:
-[[人物文本大锁 (Character Bible Prompt)] 接着进行具体分段描绘，自然平滑地使用 @标签指代核心互动，结构化描述画面细节，强调手持感与不完美真实感 (Imperfect, Authentic, Handheld)]
+[[人物文本大锁 (Character Bible Prompt)] 接着进行具体分段描绘，自然平滑地使用 @标签（如 @视频1, @图片1）指代核心互动，结构化用中文描述画面细节，强调手持感与不完美真实感 (如提示“不完美的”、“真实的”、“手持拍摄”等)]
 Audio: [详细英文描述这段所需的环境底噪和声音情绪，完全不用 @标签]
+旁白中文翻译: [将上述英文旁白要求翻译成中文，放在这里]
 
 **References**:
-- @Video1: [详细描述保留视频哪一部分运动规律/物理反馈作为强参考]
-- @Image1: [详细描述指定了必须还原哪个核心产品的复杂组件特性]
+- @视频1: [由于提示词需用中文生成，此处的参考描述也必须使用中文]
+- @图片1: [由于提示词需用中文生成，此处的参考描述也必须使用中文]
 ```
 
 **原生感实战提示词模板参考**：
 - **美妆/护肤品真人实测 (Skin Care Test)**：
-  - **Prompt**: `让角色 @Image1 在浴室镜子前使用 @Image2。模仿视频 @Video1 的手持拍摄感。画面要有手机自拍的颗粒感和轻微晃动。光影是浴室的暖黄灯光。强调角色真实的皮肤纹理。角色表情自然，带一点发现好物的惊喜感。Natural home environment, no studio lights, real person vibe.`
+  - **Prompt**: `让角色 @图片1 在浴室镜子前使用 @图片2。模仿视频 @视频1 的手持拍摄感。画面要有手机自拍的颗粒感和轻微晃动。光影是浴室的暖黄灯光。强调角色真实的皮肤纹理。角色表情自然，带一点发现好物的惊喜感。真实的家庭环境，没有影棚灯光，充满真人生活气息。`
+  - **Audio**: `Natural home environment ambient noise with slight bathroom echo. Voiceover expressing pleasant surprise.`
+  - **旁白中文翻译**: `带有轻微浴室回声的自然家庭环境底噪。表达出愉快惊喜的旁白声音。`
 - **家居/生活好物分享 (Home Gadget)**：
-  - **Prompt**: `第一人称视角 (POV) 展示产品 @Image1 在凌乱的厨房台面上。配合 @Audio1 的语音，角色在画面边缘露出一部分手部动作，展示产品的使用细节。镜头对焦要有手机自动对焦的起伏感。Authentic American home background, messy but real, iPhone video quality.`
+  - **Prompt**: `第一人称视角 (POV) 展示产品 @图片1 在凌乱的厨房台面上。镜头像 @视频1 那样推进，展示产品的使用细节。镜头对焦要有手机自动对焦的起伏感。真实的美国普通家庭背景，凌乱但真实，iPhone 15 Pro 竖屏拍摄画质。`
+  - **Audio**: `Casual, friendly voiceover explaining the product features, mixed with subtle kitchen background noises like a running fridge.`
+  - **旁白中文翻译**: `轻松友好的旁白语音解释产品特点，混合着微弱的厨房背景噪音（如冰箱运转的声音）。`
 
 ### 2. OpenAI Sora 2 (Pro)
 
@@ -248,7 +253,7 @@ TikTok 的音效可以极大提升完播率：
 | # | 检查项 | 达标标准 |
 |---|---|---|
 | 1 | **5 段式完整性** | 每个 Prompt 是否包含 [镜头语言] + [主体] + [动作] + [环境/光影] + [风格/音频] 全部 5 段？ |
-| 2 | **UGC 风格一致性** | 是否避免了影棚感？是否使用了 handheld/natural lighting/smartphone POV 等 UGC 关键词？ |
+| 2 | **UGC 风格一致性** | 是否避免了影棚感？是否使用了 handheld/natural lighting/smartphone POV 等 UGC 关键词（对于 Seedance 2.0，是否使用了手持拍摄/自然光/第一人称视角等中文翻译）？ |
 | 3 | **长度控制** | 每段 Prompt 是否在 100-200 词之间？是否有过载风险？ |
 | 4 | **音频指令** | 每段 Prompt 是否包含至少一条 `Audio:` 或 `SFX:` 指令？ |
 | 5 | **片段数量与时长** | 是否将脚本合并为尽可能少的片段（目标 2-4 段）？每段是否在 5-15 秒之间？ |
