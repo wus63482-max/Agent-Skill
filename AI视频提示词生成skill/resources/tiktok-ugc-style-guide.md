@@ -144,6 +144,7 @@ Audio: Brief silence followed by a gentle tap
 
 以下短语应出现在**每一段**视频提示词中（任选 2-3 个组合使用）：
 
+**On-Camera 模式（默认）**：
 ```
 - 9:16 vertical frame
 - Handheld smartphone POV
@@ -152,3 +153,45 @@ Audio: Brief silence followed by a gentle tap
 - Slightly warm, natural lighting
 - Shallow depth of field on product
 ```
+
+**POV 模式**（`视角：POV` 触发时使用）：
+```
+- 9:16 vertical frame
+- POV first-person handheld
+- Raw UGC footage aesthetic
+- Authentic, unpolished feel
+- Slightly warm, natural lighting
+- Only hands visible, no face
+```
+
+---
+
+## 六、POV 专属镜头词库 (POV Cinematography)
+
+> 当使用 `视角：POV` 模式时，参考以下词库替代第一节中的 On-Camera 镜头语言。
+
+### 推荐使用 ✅
+
+| 英文关键词 | 中文含义 | 适用场景 |
+|---|---|---|
+| POV first-person | 第一人称视角 | 所有 POV 场景的基底 |
+| POV handheld, slightly shaky | POV 手持晃动 | 通用基底 |
+| POV ECU on hands | POV 手部超特写 | Hook、产品细节 |
+| POV unboxing reveal | POV 开箱揭晓 | Solve、开箱 |
+| POV hands-on montage | POV 手持操作蒙太奇 | Payoff、多效果展示 |
+| POV snap zoom to object | POV 快推到物品 | Hook、惊喜发现 |
+| POV fumbling hands | POV 笨拙操作 | Agitate、失败挫折 |
+| POV steady hands-on | POV 稳定手持操作 | Solve、产品自信展示 |
+| POV slow-mo result reveal | POV 慢动作成果揭晓 | Payoff、效果高潮 |
+| POV finger points to link | POV 手指指向链接 | CTA |
+| POV thumbs up in frame | POV 竖起大拇指 | Payoff、满意表达 |
+| Camera dips down | 镜头下沉 | Agitate、沮丧情绪 |
+
+### 禁止使用 ❌ (POV 模式特别禁忌)
+
+| 禁用关键词 | 原因 |
+|---|---|
+| Face visible, full body shot | POV 不出现脸和全身 |
+| Character looks at camera | POV 镜头就是角色的眼睛 |
+| Third-person angle | POV 必须是第一人称 |
+| Portrait shot, selfie mode | 自拍 = 出脸 ≠ POV |
