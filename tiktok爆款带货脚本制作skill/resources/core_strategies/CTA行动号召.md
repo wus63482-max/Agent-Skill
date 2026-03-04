@@ -9,7 +9,7 @@
 ```
 产品价位判断
 ├── 低价 ($5-$25)  → 优先: 冲动型 CTA (紧迫感 + 低门槛)
-│   例: "Only $15, link in bio before it sells out"
+│   例: "Only $15, tap the orange cart before it sells out"
 ├── 中价 ($25-$80) → 优先: 价值型 CTA (价值锚定 + 社会认同)
 │   例: "Best $40 I ever spent, 50,000 people agree"
 └── 高价 ($80+)    → 优先: 信任型 CTA (风险消除 + 权威背书)
@@ -25,7 +25,7 @@
 
 | CTA 模板 (英文) | 适用品类 | 使用语境 |
 |---|---|---|
-| "They're running a sale RIGHT NOW, link's in my bio" | 通用 | 限时促销 |
+| "They're running a sale RIGHT NOW, tap the orange cart below" | 通用 | 限时促销 |
 | "Only X left in stock, don't sleep on this" | 通用 | 库存紧张 |
 | "This deal ends tonight, I'm literally buying 3 more" | 通用 | 限时折扣 |
 | "I found this before it went viral, get it while you can" | 新品/小众 | 早期发现 |
@@ -68,7 +68,7 @@
 
 | CTA 模板 (英文) | 适用品类 | 使用语境 |
 |---|---|---|
-| "Go check the link and thank me later" | 通用 | 轻松号召 |
+| "Tap the cart below and thank me later" | 通用 | 轻松号召 |
 | "You NEED to see the reviews on this thing" | 通用 | 引导浏览 |
 | "Wait till you see what it does to [specific use case]" | 效果类产品 | 预留悬念 |
 
@@ -79,7 +79,7 @@
 |---|---|---|
 | "Stop wasting money on [inferior solution]" | 替代品 | 替代方案差 |
 | "If you're still dealing with [pain point], just get this" | 通用 | 直接解决 |
-| "Your [problem] ends today, link in bio" | 通用 | 终结痛苦 |
+| "Your [problem] ends today, tap the cart below" | 通用 | 终结痛苦 |
 | "I wish I found this sooner, would've saved me [time/money]" | 通用 | 后悔叙事 |
 
 ---
@@ -104,4 +104,4 @@
 | **美妆护肤** | 好奇心 + 社会认同："Go check tiktok reviews, everyone's obsessed" |
 | **户外装备** | 稀缺紧迫 + 价值锚定："Sale ends today, replaces my $200 gear" |
 | **家居清洁** | 痛点解决 + 价值锚定："Stop buying X every month, this lasts forever" |
-| **时尚穿搭** | 社会认同 + 好奇心："Everyone's asking where I got this, link in bio" |
+| **时尚穿搭** | 社会认同 + 好奇心："Everyone's asking where I got this, tap the cart" |
