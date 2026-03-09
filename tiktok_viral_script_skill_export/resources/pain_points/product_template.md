@@ -105,7 +105,7 @@
 
 - 强制指定 Hook 类型：[留空，或填入：必须用 Pattern Interrupt]
 - 强制指定 CTA 类型：[留空，或填入：必须主推冲动型]
-- 强制参考案例骨架：[留空，或填入：必须模仿 examples/滚筒磨刀器案例.md 的叙事节奏]
+- 强制参考案例骨架：[留空，或填入：必须模仿 examples/roller_sharpener_case.md 的叙事节奏]
 
 ---
 
