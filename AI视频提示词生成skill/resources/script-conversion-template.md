@@ -15,7 +15,7 @@
 > [粘贴脚本中「画面」字段的原始中文描述]
 
 **Prompt ([引擎名])**:
-[镜头语言], [画幅]. [主体描述 + 外观细节]. [具体动作序列，使用 Then/While/As 串联]. [环境设定 + 光影描述]. [风格关键词]. Audio: [具体音效描述].
+[镜头语言], [画幅]. [主体描述 + 外观细节]. [具体动作序列，使用 Then/While/As 串联]. [环境设定 + 光影描述]. [风格关键词]. Audio: [具体音效描述]. (No BGM, no voiceover, no human dialogue)
 
 **Video Config**:
 - Resolution: [4K / 1080p]
@@ -37,17 +37,17 @@
 [突发性动作：碰撞、飞溅、燃烧等瞬间事件].
 [高对比度光影：harsh lighting, high contrast, warm saturated tones].
 Raw UGC footage aesthetic.
-Audio: [突发性高能声效 + 可选惊叹语气].
+Audio: [突发性高能声效 + 可选惊叹语气]. (No BGM, no voiceover, no human dialogue)
 ```
 
 **POV 版**（`视角：POV` 触发）：
 ```
-POV first-person, [ECU on hands / snap zoom to object / shaky grab], handheld smartphone, 9:16 vertical.
+POV first-person, [ECU on hands / snap zoom to object / shaky grab], handheld smartphone (单手操作) / chest-mounted action camera (双手出镜), 9:16 vertical.
 [手部抓取/触碰高冲击力物品的动作].
 [突发性物理事件从第一人称视角呈现].
 [高对比度光影：harsh lighting, high contrast].
 Raw UGC footage aesthetic.
-Audio: [突发性高能声效]. V.O. (off-screen): "[可选惊叹语气]".
+Audio: [突发性高能声效]. V.O. (off-screen): "[可选惊叹语气]". (No BGM, no human dialogue)
 ```
 
 **关键词库**：
@@ -67,17 +67,17 @@ Audio: [突发性高能声效]. V.O. (off-screen): "[可选惊叹语气]".
 [笨拙/低效的动作：crushing, struggling, wasting time].
 [偏冷偏暗的环境光：cold fluorescent, slightly underexposed, desaturated].
 Raw UGC aesthetic.
-Audio: [令人不适的声效：刮擦、叹气、不协调声].
+Audio: [令人不适的声效：刮擦、叹气、不协调声]. (No BGM, no voiceover, no human dialogue)
 ```
 
 **POV 版**（`视角：POV` 触发）：
 ```
-POV first-person, [fumbling hands / frustrated grip / camera dips down], handheld, 9:16 vertical.
+POV first-person, [fumbling hands / frustrated grip / camera dips down], handheld smartphone (单手操作) / chest-mounted action camera (双手出镜), 9:16 vertical.
 [一双手笨拙地操作失败的工具/产品，手无力地放下].
 [镜头随挫败感微微下沉、抖动加剧].
 [偏冷偏暗的环境光：cold fluorescent, slightly underexposed].
 Raw UGC aesthetic.
-Audio: [令人不适的声效]. V.O. (off-screen): "[可选沮丧叹气]".
+Audio: [令人不适的声效]. V.O. (off-screen): "[可选沮丧叹气]". (No BGM, no human dialogue)
 ```
 
 **关键词库**：
@@ -97,17 +97,17 @@ Audio: [令人不适的声效]. V.O. (off-screen): "[可选沮丧叹气]".
 [高效简洁的操作动作：spray, set, stroke, twist].
 [渐暖的光影：warming natural light, soft window light].
 Authentic UGC feel.
-Audio: [满足感声效：开箱声、清脆操作声、工具接触声].
+Audio: [满足感声效：开箱声、清脆操作声、工具接触声]. (No BGM, no voiceover, no human dialogue)
 ```
 
 **POV 版**（`视角：POV` 触发）：
 ```
-POV first-person, [unboxing reveal / steady hands-on / smooth push-in], handheld, 9:16 vertical.
+POV first-person, [unboxing reveal / steady hands-on / smooth push-in], handheld smartphone (单手操作) / chest-mounted action camera (双手出镜), 9:16 vertical.
 [一双手从包装中取出产品、稳定放置、开始使用].
 [手部动作高效自信，镜头缓慢推近跟随产品].
 [渐暖的光影：warming natural light, soft window light].
 Authentic UGC feel.
-Audio: [满足感声效]. V.O. (off-screen): "[可选产品赞叹]".
+Audio: [满足感声效]. V.O. (off-screen): "[可选产品赞叹]". (No BGM, no human dialogue)
 ```
 
 **关键词库**：
@@ -127,17 +127,17 @@ Audio: [满足感声效]. V.O. (off-screen): "[可选产品赞叹]".
 [多场景/多用途连续展示，用 First/Then/Finally 或 [Cut to] 串联].
 [温暖金色光、高饱和、充足光线].
 Raw UGC aesthetic.
-Audio: [解压 ASMR 声效：清脆切割、水冲、令人满足的声音].
+Audio: [解压 ASMR 声效：清脆切割、水冲、令人满足的声音]. (No BGM, no voiceover, no human dialogue)
 ```
 
 **POV 版**（`视角：POV` 触发）：
 ```
-POV first-person, [hands-on montage / slow-mo result reveal / thumbs up], handheld, 9:16 vertical.
+POV first-person, [hands-on montage / slow-mo result reveal / thumbs up], handheld smartphone (单手操作) / chest-mounted action camera (双手出镜), 9:16 vertical.
 [一双手展示产品效果：切割成果、使用前后对比、多角度翻转].
 [慢动作特写成果细节，手满意地竖起大拇指入镜].
 [温暖金色光、高饱和、充足光线].
 Raw UGC aesthetic.
-Audio: [解压 ASMR 声效]. V.O. (off-screen): "[可选效果感叹]".
+Audio: [解压 ASMR 声效]. V.O. (off-screen): "[可选效果感叹]". (No BGM, no human dialogue)
 ```
 
 **关键词库**：
@@ -157,17 +157,17 @@ Audio: [解压 ASMR 声效]. V.O. (off-screen): "[可选效果感叹]".
 [简洁动作：pointing, placing price tag].
 [明亮均匀光、干净背景].
 Authentic UGC smartphone aesthetic.
-Audio: [轻快的收尾声效 + 口播提示语].
+Audio: [轻快的收尾声效 + 口播提示语]. (No BGM, no voiceover, no human dialogue)
 ```
 
 **POV 版**（`视角：POV` 触发）：
 ```
-POV first-person, [product placed on surface / finger points to link area], 9:16 vertical.
+POV first-person, [product placed on surface / finger points to link area], handheld smartphone (单手操作) / chest-mounted action camera (双手出镜), 9:16 vertical.
 [一双手将产品放在桌面中央，手指自信指向屏幕左下角链接位置].
 [镜头稳定，画面干净].
 [明亮均匀光、干净背景].
 Authentic UGC smartphone aesthetic.
-Audio: [轻快音效]. V.O. (off-screen): "[行动号召口播]".
+Audio: [轻快音效]. V.O. (off-screen): "[行动号召口播]". (No BGM, no human dialogue)
 ```
 
 **关键词库**：

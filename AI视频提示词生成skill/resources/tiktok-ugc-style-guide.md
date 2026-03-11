@@ -157,7 +157,7 @@ Audio: Brief silence followed by a gentle tap
 **POV 模式**（`视角：POV` 触发时使用）：
 ```
 - 9:16 vertical frame
-- POV first-person handheld
+- POV first-person handheld (单手) / chest-mounted action camera (双手)
 - Raw UGC footage aesthetic
 - Authentic, unpolished feel
 - Slightly warm, natural lighting
@@ -175,7 +175,8 @@ Audio: Brief silence followed by a gentle tap
 | 英文关键词 | 中文含义 | 适用场景 |
 |---|---|---|
 | POV first-person | 第一人称视角 | 所有 POV 场景的基底 |
-| POV handheld, slightly shaky | POV 手持晃动 | 通用基底 |
+| POV handheld, slightly shaky | POV手持晃动 (限单手操作) | 手机随手拍基底 |
+| POV chest-mounted action camera | 胸前固定相机 (双手操作出镜) | 双手同时操作、打磨、劈柴等 |
 | POV ECU on hands | POV 手部超特写 | Hook、产品细节 |
 | POV unboxing reveal | POV 开箱揭晓 | Solve、开箱 |
 | POV hands-on montage | POV 手持操作蒙太奇 | Payoff、多效果展示 |
