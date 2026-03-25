@@ -1,0 +1,88 @@
+commit d0ab7bec88dd59a47d4185f8203f0e64cc36bb5e
+Author: wus63482-max <wus63482@gmail.com>
+Date:   Wed Mar 25 08:46:11 2026 +0800
+
+    chore: add new scripts, update case studies and fix notion env token placeholder
+
+ .antigravityrules                                  |   5 -
+ .../README.md"                                     | 206 --------
+ .../SKILL.md"                                      | 408 ---------------
+ .../examples/skincare-ugc-seedance.md"             |  90 ----
+ .../examples/text-to-video.md"                     | 152 ------
+ .../resources/prompt-templates.md"                 | 142 -----
+ .../resources/script-conversion-template.md"       | 187 -------
+ .../README.md"                                     | 252 +++++++++
+ .../SKILL.md"                                      | 570 +++++++++++++++++++++
+ .../examples/pov-tool-demo.md"                     |   0
+ .../examples/skincare-ugc-seedance.md"             |  71 +++
+ .../examples/text-to-video.md"                     |  91 ++++
+ ...h_electric_sharpener_case_sharpal_seed2_pov.md" | 102 ++++
+ ...8h_electric_sharpener_fried_apple_seed2_pov.md" |  42 ++
+ ...h_electric_sharpener_seese_blower_seed2_pov.md" |   2 +-
+ ...ied_apple_hook01_pillbox_tomatoes_seed2_pov.md" |  57 +++
+ ..._fried_apple_hook02_petbrush_corn_seed2_pov.md" |  57 +++
+ ...ied_apple_hook03_floss_strawberry_seed2_pov.md" |  57 +++
+ ...pple_hook04_eyelash_curler_garlic_seed2_pov.md" |  57 +++
+ ...apple_hook05_binder_clip_scallion_seed2_pov.md" |  57 +++
+ ...ed_apple_hook06_lint_roller_herbs_seed2_pov.md" |  57 +++
+ .../181n_diamond_file_tape_case_seed2_pov.md"      | 160 ++++++
+ ...198h_electric_sharpener_tape_case_seed2_pov.md" | 165 ++++++
+ ..._system_seedance20_video_prompts_24in1_gift.md" | 169 ++++++
+ .../output/README.md"                              |   5 +
+ .../resources/parameter-cheatsheet.md"             |   0
+ .../resources/prompt-templates.md"                 | 171 +++++++
+ .../resources/script-conversion-template.md"       | 115 +++++
+ .../resources/tiktok-ugc-style-guide.md"           |   0
+ .../SKILL.md"                                      | 369 +++++++++++++
+ .../examples/physics-demo.md"                      |  62 +++
+ .../output/README.md"                              |   5 +
+ .../resources/parameter-cheatsheet.md"             |  71 +++
+ .../resources/tiktok-ugc-style-guide.md"           | 198 +++++++
+ .../SKILL.md"                                      | 429 ++++++++++++++++
+ .../examples/pov-tool-demo.md"                     | 101 ++++
+ .../examples/tool-demo.md"                         |  56 ++
+ .../output/README.md"                              |   5 +
+ .../resources/parameter-cheatsheet.md"             |  55 ++
+ .../resources/tiktok-ugc-style-guide.md"           | 198 +++++++
+ agent-skill-creator/SKILL.md                       | 262 ----------
+ agent-skill-creator/examples/case_template.md      |  38 --
+ .../examples/complete-skill-showcase.md            | 134 -----
+ .../resources/perfect-prompt-guide.md              | 142 -----
+ agent-skill-creator/resources/quality-checklist.md |  45 --
+ agent-skill-creator/resources/skill-md-template.md |  92 ----
+ automation/README.md                               | 163 ++++++
+ .../save_to_notion_calendar.cpython-313.pyc        | Bin 0 -> 13185 bytes
+ automation/archive_daily_outputs.ps1               | 165 ++++++
+ automation/notion.env.ps1                          |  15 +
+ automation/run_daily_notion_sync.ps1               | 134 +++++
+ automation/save_to_notion_calendar.py              | 291 +++++++++++
+ log2.txt                                           |  12 +
+ push.log                                           | Bin 0 -> 3780 bytes
+ push2.log                                          |  26 +
+ status.txt                                         |  12 +
+ tiktok_viral_script_skill_export/README.md         |  12 +
+ tiktok_viral_script_skill_export/SKILL.md          |  18 +
+ .../examples/case_sharpal_electric_sharpener.md    |  62 +++
+ .../examples/madebut_impact_wrench_case.md         |  64 +++
+ .../examples/madebut_impact_wrench_case_v2.md      |  62 +++
+ .../examples/vevor_4_in_1_gas_trimmer_case.md      |  67 +++
+ .../198h_electric_sharpener_script_seese_blower.md | 220 --------
+ ...r_script_fried_apple_hook01_pillbox_tomatoes.md |  69 +++
+ ...ener_script_fried_apple_hook02_petbrush_corn.md |  69 +++
+ ...r_script_fried_apple_hook03_floss_strawberry.md |  69 +++
+ ...ipt_fried_apple_hook04_eyelash_curler_garlic.md |  69 +++
+ ...ript_fried_apple_hook05_binder_clip_scallion.md |  69 +++
+ ..._script_fried_apple_hook06_lint_roller_herbs.md |  69 +++
+ ...sion_sharpening_system_script_24in1_timeline.md | 138 +++++
+ .../181n_diamond_file_script_tape_case.md          | 139 +++++
+ .../181n_diamond_file_tape_case_seed2_pov.md       | 158 ++++++
+ .../2026-03-19/198h_electric_sharpener_script.md   | 190 +++++++
+ .../198h_electric_sharpener_script_tape_case.md    | 139 +++++
+ ...recision_sharpening_system_script_24in1_gift.md | 163 ++++++
+ ...h_precision_sharpening_system_script_madebut.md | 163 ++++++
+ ...02h_precision_sharpening_system_script_vevor.md | 164 ++++++
+ .../output/2026-03-24/sharpal_198h_script.md       | 189 +++++++
+ .../output/2026-03-24/sharpal_202h_script.md       | 193 +++++++
+ .../resources/pain_points/181n.md                  |  29 +-
+ .../resources/pain_points/202h.md                  |  67 ++-
+ 81 files changed, 7041 insertions(+), 2137 deletions(-)
