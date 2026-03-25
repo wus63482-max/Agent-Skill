@@ -1,5 +1,0 @@
-Platform: Windows
-When running terminal commands:
-- Always use 'cmd /c' prefix.
-- Append '&& exit' to every command.
-- Ensure the process terminates immediately after execution to send an EOF signal.

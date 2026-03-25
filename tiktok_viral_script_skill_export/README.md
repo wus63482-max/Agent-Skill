@@ -77,6 +77,7 @@ tiktok_viral_script_skill_export/
 │   ├── 129n_viral_mashup_case.md            #    框架 C 案例
 │   ├── 24_in_1_ratchet_screwdriver_case.md    #    工具类案例
 │   ├── 8_in_1_electrician_pliers_case.md         #    工具类案例
+│   ├── madebut_impact_wrench_case.md      #    高客单工具类案例
 │   ├── seese_6_inch_mini_chainsaw_case.md    #    电动工具案例
 │   ├── seese_blower_case.md             #    电动工具案例
 │   ├── fried_apple_case.md                #    框架 B 案例
@@ -101,7 +102,18 @@ tiktok_viral_script_skill_export/
 │       ├── 2026_tiktok_commerce_content_trends.md
 │       └── tk_video_strategy_half_algorithm_half_content.md
 └── output/                           # 📤 生成内容输出目录（运行时生成，不随 Skill 分发）
+    └── 2026-03-17/                  #    当天生成内容按日期归档
 ```
+
+---
+
+## 🗂️ 输出归档约定
+
+后续所有**新生成的视频脚本**都应直接保存到 `output/YYYY-MM-DD/`：
+
+- 默认按本地当天日期建文件夹，例如 `output/2026-03-17/`
+- 不再把当天新文件直接放在 `output/` 根目录
+- 如果同轮还会生成视频提示词，脚本文件名应保持稳定，方便下游自动引用
 
 ---
 
